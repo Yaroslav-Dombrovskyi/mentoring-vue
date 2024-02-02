@@ -1,6 +1,7 @@
 <script setup>
 import img from "./assets/images/img.jpg"
 import Card from "@/components/Card.vue";
+import Counter from "@/components/Counter.vue";
 
  const data = [
    { name: "Bart Simpson", age: 10, class: "fourth grade", img }
@@ -9,11 +10,17 @@ import Card from "@/components/Card.vue";
 
 <template>
   <h1>Hello Vue</h1>
-  <Card :data="data" />
+  <Counter />
 </template>
 
-<style scoped>
+<style>
 ul, li {
     list-style: none;
   }
+
+.btn {
+  border-radius: 4px;
+  width: 60px;
+  height: 32px;
+}
 </style>
