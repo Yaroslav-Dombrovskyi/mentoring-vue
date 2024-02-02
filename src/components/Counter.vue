@@ -19,7 +19,8 @@ onMounted(() => console.log('hello from hook'));
 
 <template>
   <div class="counter">
-    <h2 class="count" :class="countClass">{{ count }}</h2>
+    <h2>{{ title }}</h2>
+    <h3 class="count" :class="countClass">{{ count }}</h3>
     <div class="counter__actions">
       <button class="btn" @click="decrement">-</button>
       <button class="btn" @click="increment">+</button>
